@@ -12,7 +12,6 @@ add.addEventListener("click", function() {
     // console.log("this is adding");
     count.innerHTML++;
     setColor();
-   //document.getElementById("increase-text").style.color = "blue";
 })
 
 sub.addEventListener("click", function() {
@@ -28,12 +27,12 @@ resetNum.addEventListener("click", function() {
 })
 
 function setColor() {
-    if (count.innerHTML > 0) {
+    if(count.innerHTML > 0) {
         count.style.color = "green";
     } else if(count.innerHTML < 0) {
-        color.style.color = "yellow";
+        count.style.color = "red";
     } else {
-        count.style.color = "black";
+        count.style.color = "blue";
     }
 }
 
